@@ -1,1 +1,6 @@
+nome  = input("escolha o nome do personagem")
+lugar = input("escolha o nome do lugar")
+objeto = input("escolha o objeto")
+
+print (f"certo dia o {nome} foi para a {lugar} misteriosa, la ele encontrou um {objeto} e ficou feliz para sempre")
 
