@@ -1,12 +1,8 @@
-compra_total = int(input("Qual o valor total das mercadorias compradas R$ : "))
+valor = float(input("Valor da compra: "))
 
-
-
-
-if (compra_total <=500 ):
-    print("Não há imposto!")
+if valor <= 500:
+    imposto = 0
 else:
-    excedente = compra_total - 500
-    imposto = excedente * 0.5
-    print(f"O imposto aplicado é de R${imposto:.2f}.")
+    imposto = (valor - 500) * 0.5
 
+print("Imposto:", imposto)
