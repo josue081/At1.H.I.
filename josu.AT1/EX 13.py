@@ -1,11 +1,11 @@
-salario_inicial = float(input("Digite o salário inicial: R$"))
-aumento_percentual = float(input("Digite o aumento percentual inicial (em %): "))
-anos = int(input("Digite o número de anos: "))
+print("Cálculo do salário com aumento a cada ano.") 
 
+salario = float(input("me diga o seu salário inicial: "))
+anos = int(input("Por quantos anos o seu salário aumentou? "))
+aumento = float(input("Qual foi o aumento percentual do primeiro ano? "))
 
-salario_atual = salario_inicial
-for ano in range(anos):
-    salario_atual += salario_atual * (aumento_percentual / 100)
-    aumento_percentual *= 2  
-   
-print(f"O salário atual após {anos} anos é: R${salario_atual:.2f}")
+for ano in range(anos): 
+    salario = salario + (salario * (aumento / 100))
+    aumento = aumento * 2
+
+print("Depois de", anos, "anos, o salário será de:", salario) 
