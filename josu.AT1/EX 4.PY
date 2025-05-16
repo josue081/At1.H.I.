@@ -1,22 +1,13 @@
-dias = int(input("Digite o número de dias que o carro foi alugado: "))
-km = float(input("Digite o número total de quilômetros rodados: "))
+dias = int(input("Dias com o carro: "))
+km = float(input("KM rodados: "))
 
-
-pago = dias * 90
-
+custo = dias * 90
 
 if km > 100:
-    km_extra = km - 100
-    custo_extra = km_extra * 12
+    extra = (km - 100) * 12
 else:
-    custo_extra = 0
+    extra = 0
 
+total = custo + extra
 
-
-
-custo_total = pago + custo_extra
-
-
-print(f"O custo total foi de : {custo_total} R$")
-
-
+print("Total a pagar:", total)
