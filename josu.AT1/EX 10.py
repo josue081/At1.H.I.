@@ -1,16 +1,12 @@
-segundos = int(input("Segundos: "))
+s = int(input("Segundos: "))
 
+d = s // 86400
+s = s % 86400
 
+h = s // 3600
+s = s % 3600
 
+m = s // 60
+s = s % 60
 
-dias = segundos // 86400
-segundos_restante = segundos % 86400
-horas = segundos_restante // 3600
-segundos_rest = segundos_restante % 3600
-minutos = segundos_rest // 60
-segundos_rest = segundos_rest % 60
-
-
-
-
-print(dias,"dias,",horas,"horas,",minutos,"minutos e",segundos_rest,"segundos.")
+print(d, "dias,", h, "horas,", m, "minutos e", s, "segundos.")
