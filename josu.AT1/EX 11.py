@@ -1,8 +1,7 @@
-nome_usuario = input("Digite o nome de usuário: ")
-senha = input("Digite sua senha: ")
+usuario = input("Usuário: ")
+senha = input("Senha: ")
 
-
-if nome_usuario == senha:
-    print("Erro: O nome de usuário e a senha não podem ser iguais!")
+if usuario == senha:
+    print("Erro: usuário e senha iguais.")
 else:
-    print("Login criado com sucesso!")
+    print("Login ok.")
