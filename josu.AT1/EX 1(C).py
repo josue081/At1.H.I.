@@ -1,17 +1,15 @@
-nota1 = float(input("Nota 2:"))
-peso1 = 2
+nota1 = float(input("Nota 1: "))
+nota2 = float(input("Nota 2: "))
+nota3 = float(input("Nota 3: "))
 
+# a. Média Aritmética Simples
+media_simples = (nota1 + nota2 + nota3) / 3
+print("Média Simples:", media_simples)
 
-nota2 = float(input("Nota 3:"))
-peso2 = 3
+# b. Média Ponderada (2, 2, 3)
+media_ponderada_1 = (nota1*2 + nota2*2 + nota3*3) / (2 + 2 + 3)
+print("Média Ponderada (2,2,3):", media_ponderada_1)
 
-nota3 = float(input("Nota 4:"))
-peso3 = 4
-
-
-media = (nota2*peso2 + nota3*peso3 + nota4*peso4) / (peso1+peso3+peso4)
-
-
-
-
-print("Média: ",media)
+# c. Média Ponderada (1, 2, 2)
+media_ponderada_2 = (nota1*1 + nota2*2 + nota3*2) / (1 + 2 + 2)
+print("Média Ponderada (1,2,2):", media_ponderada_2)
